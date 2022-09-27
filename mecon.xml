@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>mecon</Name>
+  <Repository>ghcr.io/elzik/mecon</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/elzik/mecon</Project>
+  <Overview>Media Reconciler, or simply mecon, is a cross-platform command line tool which reconciles media within a directory with media in a Plex library. For a given directory of files, it answers simple questions such as:&#xD;
+&#xD;
+Which ones have failed to have been added to a Plex library?&#xD;
+Which ones exist in a Plex library?&#xD;
+Which ones have been watched by all users?&#xD;
+Which ones have been watched by a sub-set of users?&#xD;
+&#xD;
+For full documentations see https://github.com/elzik/mecon#mecon</Overview>
+  <Category>Tools: MediaApp:Video</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/elzik/mecon/main/Images/mecon-logo-color-icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Video Share" Target="/Video" Mode="ro" Description="A share containing all video content. This can be ommited if the intention is to scan media files against a netwrok share instead of a volume mount." Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Plex Host" Target="Mecon__Plex__BaseUrl" Default="http://loacalhost:32400" Mode="" Description="Specifies the Plex server to use when reconciling media on disk with media in Plex libraries. This URL may be specified with or without a port as necessary. This can me ommited if the intention is to pass the URL on the command line." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Plex Token" Target="Mecon__Plex__AuthToken" Default="" Mode="" Description="Specifies the Plex server authentication token. See the Plex documentation for explanation on how to find your token: https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/. This can me ommited if the intention is to pass the token on the command line." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <License>GPL-3.0</License>
+  <ExtraSearchTerms>Plex</ExtraSearchTerms>
+  <Readme>https://github.com/elzik/mecon#mecon</Readme>
+</Container>
