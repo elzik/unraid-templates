@@ -28,7 +28,6 @@ For full documentations see https://github.com/elzik/mecon#mecon</Overview>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="Video Share" Target="/Video" Mode="ro" Description="A share containing all video content. This can be ommited if the intention is to scan media files against a netwrok share instead of a volume mount." Type="Path" Display="always" Required="false" Mask="false"/>
   <Config Name="Plex Host" Target="Mecon__Plex__BaseUrl" Default="http://loacalhost:32400" Mode="" Description="Specifies the Plex server to use when reconciling media on disk with media in Plex libraries. This URL may be specified with or without a port as necessary. This can me ommited if the intention is to pass the URL on the command line." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Plex Token" Target="Mecon__Plex__AuthToken" Default="" Mode="" Description="Specifies the Plex server authentication token. See the Plex documentation for explanation on how to find your token: https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/. This can me ommited if the intention is to pass the token on the command line." Type="Variable" Display="always" Required="false" Mask="false"/>
   <License>GPL-3.0</License>
