@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/128948-support-mecon-reconcile-media-files-with-plex-library-entries/</Support>
   <Project>https://github.com/elzik/mecon</Project>
   <Overview>Media Reconciler, or simply mecon, is a cross-platform command line tool which reconciles media within a directory with media in a Plex library. For a given directory of files, it answers simple questions such as:&#xD;
 &#xD;
